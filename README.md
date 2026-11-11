@@ -1,2 +1,2 @@
-# A-pe-ınco-comfand-
+# A-pe-nco-comfand-
 Periódico juvenil 
