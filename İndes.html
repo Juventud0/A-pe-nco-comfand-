@@ -1,0 +1,209 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALPEINCO | Periódico Juvenil Confandi</title>
+<style>
+:root {
+  --azul: #123c78;
+  --verde: #20a66a;
+  --naranja: #ff9d32;
+  --morado: #7548a8;
+  --fondo: #f4f7fc;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #243047;
+  background: var(--fondo);
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(120deg, var(--azul), var(--morado));
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+header h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  margin: 0;
+  letter-spacing: 3px;
+}
+header p { font-size: 1.15rem; margin: 8px 0; }
+nav {
+  background: white;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px #0001;
+  z-index: 5;
+}
+nav a {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+nav a:hover { background: #e9effb; }
+main { max-width: 1100px; margin: auto; padding: 25px 18px; }
+section { padding: 25px 0; scroll-margin-top: 85px; }
+h2 { color: var(--azul); font-size: 1.8rem; }
+.presentacion {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 4px 16px #0000000c;
+}
+.presentacion h2 { color: var(--morado); }
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+.tarjeta {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  border-top: 5px solid var(--verde);
+  box-shadow: 0 4px 15px #0000000c;
+}
+.tarjeta:nth-child(2) { border-color: var(--naranja); }
+.tarjeta:nth-child(3) { border-color: var(--morado); }
+.tarjeta h3 { color: var(--azul); margin-top: 0; }
+.etiqueta {
+  display: inline-block;
+  background: #e8f6ee;
+  color: #167345;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: .85rem;
+  font-weight: bold;
+}
+.aviso {
+  background: #fff5df;
+  border-left: 5px solid var(--naranja);
+  padding: 15px;
+  border-radius: 8px;
+}
+footer {
+  background: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 25px;
+}
+footer p { margin: 5px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ALPEINCO</h1>
+  <p>Periódico Juvenil del Colegio Confandi</p>
+  <p>¡La voz joven que marca la diferencia!</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#noticias">Noticias</a>
+  <a href="#deportes">Deportes</a>
+  <a href="#cultura">Cultura</a>
+  <a href="#voces">Voces estudiantiles</a>
+  <a href="#agenda">Agenda</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+  <section id="inicio">
+    <div class="presentacion">
+      <span class="etiqueta">Nuestra comunidad educativa</span>
+      <h2>¡Bienvenidos a ALPEINCO!</h2>
+      <p>
+        Somos el periódico juvenil del Colegio Confandi.
+        Este es un espacio para informar, compartir ideas,
+        reconocer talentos y contar las historias de nuestra
+        comunidad educativa.
+      </p>
+      <p><strong>Tu voz también hace parte de esta historia.</strong></p>
+    </div>
+  </section>
+
+  <section id="noticias">
+    <h2>📰 Noticias del colegio</h2>
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <h3>Actualidad escolar</h3>
+        <p>Próximamente encontrarás aquí las noticias y novedades de nuestro colegio.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Comunidad educativa</h3>
+        <p>Un espacio para compartir proyectos, actividades y logros de nuestros estudiantes.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Noticias especiales</h3>
+        <p>Las historias que merecen ser conocidas por toda nuestra comunidad.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="deportes">
+    <h2>⚽ Deportes</h2>
+    <div class="tarjeta">
+      <p>Conoce las actividades deportivas, competencias, equipos y talentos de nuestros estudiantes.</p>
+    </div>
+  </section>
+
+  <section id="cultura">
+    <h2>🎨 Cultura y talento</h2>
+    <div class="tarjeta">
+      <p>Arte, música, literatura, creatividad y todas las expresiones culturales de nuestro colegio.</p>
+    </div>
+  </section>
+
+  <section id="voces">
+    <h2>🎤 Voces estudiantiles</h2>
+    <div class="tarjeta">
+      <p>Opiniones, entrevistas, historias y propuestas de los jóvenes para construir una mejor comunidad.</p>
+    </div>
+  </section>
+
+  <section id="agenda">
+    <h2>📅 Agenda escolar</h2>
+    <div class="tarjeta">
+      <p>Aquí publicaremos las próximas actividades, celebraciones y eventos del Colegio Confandi.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>✉️ Contacto</h2>
+    <div class="tarjeta">
+      <p>¿Tienes una noticia, una idea o una historia para compartir?</p>
+      <p>Comunícate con el equipo editorial de ALPEINCO a través de los canales autorizados por el colegio.</p>
+    </div>
+  </section>
+
+  <p class="aviso">
+    <strong>Importante:</strong> Las noticias, fotografías y datos de estudiantes
+    deben contar con la autorización correspondiente antes de publicarse.
+  </p>
+</main>
+
+<footer>
+  <p><strong>ALPEINCO</strong></p>
+  <p>Periódico Juvenil del Colegio Confandi</p>
+  <p>© 2026 - Un espacio para informar, crear y participar.</p>
+</footer>
+
+</body>
+</html>
