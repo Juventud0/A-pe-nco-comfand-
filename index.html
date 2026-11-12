@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123c78">
+<meta name="description" content="ALPEINCO, periódico juvenil: noticias, ideas, cultura y voces de nuestra comunidad educativa Comfandi.">
+<title>ALPEINCO | Periódico juvenil</title>
+<style>
+:root{--navy:#123c78;--green:#20a66a;--ink:#182538;--muted:#617086;--paper:#f4f7fb;--line:#e4eaf2;--gold:#ffc857}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit}
+.topbar{background:var(--navy);color:#fff;text-align:center;padding:8px 16px;font-size:.82rem;letter-spacing:.08em}
+.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.navwrap{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,var(--navy),var(--green));display:grid;place-items:center;color:#fff;font-weight:900;font-size:1.05rem}
+.brand strong{display:block;color:var(--navy);font-size:1.2rem;letter-spacing:.04em}.brand small{display:block;color:var(--muted);font-size:.72rem}
+.nav{display:flex;gap:20px;align-items:center}.nav a{text-decoration:none;font-weight:700;font-size:.9rem;color:#34445a}.nav a:hover{color:var(--green)}.menu{display:none;border:0;background:var(--navy);color:white;padding:9px 12px;border-radius:8px;font-size:1rem}
+.hero{background:linear-gradient(115deg,#102f60 0%,#174f8e 58%,#16845f 100%);color:#fff;overflow:hidden}.hero-inner{max-width:1120px;margin:auto;padding:76px 22px 70px;display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center}
+.eyebrow{color:#bcebd3;text-transform:uppercase;font-weight:800;font-size:.78rem;letter-spacing:.16em}.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.02;margin:14px 0 18px;letter-spacing:-.04em}.hero p{font-size:1.1rem;color:#e3edf9;max-width:620px;margin:0 0 26px}
+.cta{display:inline-block;background:var(--gold);color:#183354;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:800}.hero-art{min-height:250px;border:1px solid #ffffff44;border-radius:28px;background:linear-gradient(145deg,#ffffff20,#ffffff08);display:grid;place-items:center;text-align:center;padding:28px;transform:rotate(2deg)}
+.hero-art .symbol{font-size:5rem;line-height:1}.hero-art strong{display:block;font-size:1.45rem;margin-top:12px}.hero-art span{color:#d7e8f7;font-size:.9rem}
+.wrap{max-width:1120px;margin:auto;padding:58px 22px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-head h2{font-size:2rem;color:var(--navy);margin:0;letter-spacing:-.03em}.section-head p{margin:5px 0 0;color:var(--muted)}
+.tag{display:inline-block;background:#e5f5ed;color:#117449;border-radius:999px;padding:5px 10px;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #17365d0a}.card-top{height:125px;display:grid;place-items:center;font-size:3rem;background:linear-gradient(135deg,#e4effb,#e2f5eb)}.card:nth-child(2) .card-top{background:linear-gradient(135deg,#fff0d2,#ffe4df)}.card:nth-child(3) .card-top{background:linear-gradient(135deg,#e9e4fb,#e1efff)}
+.card-body{padding:21px}.card h3{margin:10px 0 8px;color:var(--navy);font-size:1.22rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.card a{display:inline-block;margin-top:15px;color:var(--green);font-weight:800;text-decoration:none}
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about-inner{max-width:1120px;margin:auto;padding:55px 22px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about h2{font-size:2rem;color:var(--navy);margin:0 0 12px}.about p{color:var(--muted)}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:12px}.value{padding:18px;border-radius:14px;background:var(--paper);font-weight:800;color:var(--navy)}.value span{display:block;font-size:1.5rem;margin-bottom:5px}
+.participate{background:#eaf4ff}.participate-inner{max-width:1120px;margin:auto;padding:52px 22px;display:flex;justify-content:space-between;align-items:center;gap:25px}.participate h2{color:var(--navy);font-size:1.8rem;margin:0 0 7px}.participate p{color:var(--muted);margin:0}.mail{background:var(--navy);color:#fff;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:800;white-space:nowrap}
+footer{background:#102746;color:#dce7f4;padding:30px 22px;text-align:center}footer strong{font-size:1.1rem;letter-spacing:.08em}footer p{margin:7px 0;color:#b8c8dc;font-size:.85rem}.copyright{font-size:.76rem!important;color:#91a7c2!important;margin-top:16px!important}
+@media(max-width:760px){.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav.open{display:flex}.menu{display:block}.hero-inner{grid-template-columns:1fr;padding-top:55px}.hero-art{min-height:190px}.grid{grid-template-columns:1fr}.about-inner{grid-template-columns:1fr}.participate-inner{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}}
+</style></head>
+<body>
+<div class="topbar">EDUCACIÓN · PARTICIPACIÓN · COMUNIDAD</div>
+<header class="header"><div class="navwrap">
+<a class="brand" href="#inicio" aria-label="ALPEINCO, ir al inicio"><span class="logo">A!</span><span><strong>ALPEINCO</strong><small>Periódico juvenil · Comfandi</small></span></a>
+<button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+<nav class="nav" id="nav"><a href="#inicio">Inicio</a><a href="#secciones">Secciones</a><a href="#nosotros">Quiénes somos</a><a href="#participa">Participa</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="hero-inner"><div><span class="eyebrow">La voz de nuestra comunidad</span><h1>Ideas que inspiran.<br>Voces que transforman.</h1><p>Un espacio creado para compartir noticias, experiencias, talentos y proyectos de nuestra comunidad educativa ALPEINCO.</p><a class="cta" href="#secciones">Explora el periódico ↓</a></div>
+<div class="hero-art"><div><div class="symbol">📰</div><strong>¡Aquí tenemos voz!</strong><span>Aprender · Crear · Compartir</span></div></div></div></section>
+<section class="wrap" id="secciones"><div class="section-head"><div><span class="tag">Nuestro periódico</span><h2>Explora nuestras secciones</h2><p>Información, creatividad y participación para toda la comunidad.</p></div></div>
+<div class="grid">
+<article class="card"><div class="card-top">📣</div><div class="card-body"><span class="tag">Comunidad</span><h3>Noticias del colegio</h3><p>Encuentra aquí comunicados, actividades, proyectos y acontecimientos de nuestra institución. Esta sección se actualizará con información confirmada por la comunidad educativa.</p><a href="#participa">Enviar una noticia →</a></div></article>
+<article class="card"><div class="card-top">🎭</div><div class="card-body"><span class="tag">Talento</span><h3>Cultura y creatividad</h3><p>Un lugar para compartir escritos, fotografías, dibujos, música, recomendaciones y las expresiones artísticas de nuestros estudiantes.</p><a href="#participa">Comparte tu talento →</a></div></article>
+<article class="card"><div class="card-top">💡</div><div class="card-body"><span class="tag">Aprendizaje</span><h3>Ideas que construyen</h3><p>Reflexiones, iniciativas, consejos de estudio y propuestas que promueven el respeto, la convivencia y el crecimiento personal.</p><a href="#participa">Propón una idea →</a></div></article>
+</div></section>
+<section class="about" id="nosotros"><div class="about-inner"><div><span class="tag">Quiénes somos</span><h2>Un periódico hecho por y para la comunidad</h2><p>ALPEINCO es un espacio juvenil de comunicación escolar que busca fortalecer la participación, la expresión y el sentido de pertenencia. Queremos que cada estudiante encuentre una oportunidad para informar, aprender, crear y ser escuchado.</p><p>Nuestro compromiso es publicar contenidos respetuosos, claros y responsables, dando valor a las diferentes voces y experiencias de la comunidad educativa.</p></div>
+<div class="values"><div class="value"><span>🤝</span>Respeto e inclusión</div><div class="value"><span>🗣️</span>Participación</div><div class="value"><span>🔎</span>Información responsable</div><div class="value"><span>🌱</span>Aprendizaje continuo</div></div></div></section>
+<section class="participate" id="participa"><div class="participate-inner"><div><h2>¡Tu voz también hace parte!</h2><p>¿Tienes una noticia, una historia, una fotografía o una idea para el periódico? Compártela con el equipo editorial y ayuda a construir este espacio.</p></div><a class="mail" href="mailto:alpeinco@comfandi.com.co?subject=Colaboraci%C3%B3n%20para%20el%20peri%C3%B3dico%20juvenil%20ALPEINCO">Enviar una propuesta ✉</a></div></section>
+</main>
+<footer><strong>ALPEINCO</strong><p>Periódico juvenil · Comunidad educativa Comfandi</p><p>Informar con respeto. Participar con ideas. Crecer en comunidad.</p><p class="copyright">© <span id="year"></span> ALPEINCO · Sitio web de carácter educativo.</p></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script></body></html>
