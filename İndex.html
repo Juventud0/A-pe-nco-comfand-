@@ -5,7 +5,40 @@ Html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALPEINCO | Periódico Juvenil Confandi</title>
-<style>
+<style>.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+}
+
+.logo-alpeinco {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.informacion-marca h1 {
+  color: #092b65;
+  font-size: 32px;
+}
+
+.informacion-marca p {
+  color: #345477;
+}
+
+@media (max-width: 600px) {
+  .logo-alpeinco {
+    width: 85px;
+    height: 85px;
+  }
+
+  .encabezado {
+    gap: 12px;
+  
+
 :root {
   --azul: #123c78;
   --verde: #20a66a;
